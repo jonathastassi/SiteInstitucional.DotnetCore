@@ -1,0 +1,110 @@
+﻿* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #1e1e1e;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 980px;
+  height: 470px;
+  margin: 0 auto;
+}
+
+.header-top {
+  height: 120px;
+}
+
+.banner {
+  height: 350px;
+  background-color: #514e51;
+}
+
+.menu {
+  height: 50px;
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  background-color: #0062b7;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu ul li {
+  flex: 1;
+  display: flex;
+  text-align: center;
+}
+
+.menu ul li a,
+.menu ul li a:active,
+.menu ul li a:visited,
+.menu ul li a:hover {
+  color: #fff;
+}
+
+.menu ul li a:hover {
+  font-weight: bold;
+}
+
+.menu ul li.active a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  flex: 1;
+  height: 50px;
+  line-height: 50px;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 948px;
+  background-color: #fff;
+  min-height: 400px;
+  padding: 16px;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  height: 100px;
+  background-color: #303030;
+  margin-bottom: 50px;
+}
+
+.home_sobre img {
+  float: left;
+  margin-right: 16px;
+}
+
+.home_sobre h4 {
+  margin-top: 0px;
+}
+
+.home_portfolio {
+  clear: both;
+  padding-top: 16px;
+}
+
+.portfolio_item {
+  width: 200px;
+  height: 150px;
+  float: left;
+  border: 3px solid #e2e8ee;
+  margin: 10px;
+}

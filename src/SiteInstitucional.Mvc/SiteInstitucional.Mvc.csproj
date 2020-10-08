@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="..\SiteInstitucional.Application\SiteInstitucional.Application.csproj"/>
+    <ProjectReference Include="..\SiteInstitucional.Domain\SiteInstitucional.Domain.csproj"/>
+    <ProjectReference Include="..\SiteInstitucional.Infra\SiteInstitucional.Infra.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+</Project>

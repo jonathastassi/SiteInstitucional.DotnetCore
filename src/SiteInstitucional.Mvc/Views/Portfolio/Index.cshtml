@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Portfólio";
+}
+
+@model List<PortfolioViewModel>
+
+<h1>Portfólio</h1>
+
+@foreach(var p in Model)
+{
+    <div class="portfolio_item">
+        <img src="@p.Image" alt="@p.Title" border="0" width="200" height="150" >
+    </div>
+}
+<div style="clear: both"></div>

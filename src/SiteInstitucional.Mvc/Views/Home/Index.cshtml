@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+@model List<PortfolioViewModel>
+
+<div class="home_sobre">
+    <img src="" alt="" height="150" width="150">
+    <h4>Sobre</h4>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus numquam cumque nostrum consectetur mollitia modi maiores nisi reprehenderit, eum molestias ipsum aspernatur nihil accusantium eveniet cupiditate fuga. Aliquam, dolorem.
+    </p>
+</div>
+
+<div class="home_portfolio">
+    <h4>Meu Portfólio Recente</h4>
+    @foreach(var p in Model)
+    {
+        <div class="portfolio_item">
+            <img src="@p.Image" alt="@p.Title" border="0" width="200" height="150" >
+        </div>
+    }
+    <div style="clear: both"></div>
+</div>
