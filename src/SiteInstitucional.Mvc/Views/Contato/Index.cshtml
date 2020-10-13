@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Contato";
+}
+
+@model ContatoViewModel
+
+<h1>Contato</h1>
+
+@if (Model != null && Model.Status != "")
+{
+    <h3>@Model.Status</h3>
+}
+<h3></h3>
+
+<form method="post" asp-action="SendEmail" class="form-contato">
+    <label asp-for="Name">Seu nome:</label>
+    <input type="text" class="form-control" id="Name" placeholder="Seu nome" asp-for="@Model.Name">
+    <span asp-validation-for="@Model.Name" class="text-danger"></span>
+
+    <label asp-for="Name">Seu e-mail:</label>
+    <input type="text" class="form-control" id="Email" placeholder="Seu e-mail" asp-for="@Model.Email">
+    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+
+    <label asp-for="Message">Sua mensagem:</label>
+    <textarea asp-for="@Model.Message" placeholder="Sua mensagem" rows="5"></textarea>
+    <span asp-validation-for="@Model.Message" class="text-danger"></span>
+
+    <button type="submit">
+        Enviar mensagem
+    </button>
+</form>

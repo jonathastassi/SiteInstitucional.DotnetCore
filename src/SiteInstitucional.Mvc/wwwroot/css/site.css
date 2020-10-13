@@ -108,3 +108,35 @@ body {
   border: 3px solid #e2e8ee;
   margin: 10px;
 }
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contato > label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.form-contato > input,
+.form-contato > textarea {
+  height: 30px;
+  line-height: 30px;  
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-bottom: 14px;
+  padding: 0px 5px;
+}
+
+.form-contato > textarea {
+  height: 150px;
+}
+
+.form-contato > button {
+  height: 42px;
+  line-height: 42px;  
+  background-color: #e2e8ee;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
